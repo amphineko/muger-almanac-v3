@@ -1,0 +1,106 @@
+* { margin: 0; padding: 0; }
+
+body {
+	background: whitesmoke;
+	color: #666;
+	font-family: "微软雅黑", "Trebuchet MS", Roboto, arial, sans-serif;
+	font-size: 12px;
+	height: auto;
+}
+
+div.card {
+	background: white;
+	border-bottom: 1px dashed #DCDCDC;
+	border-left: 1px solid #ECECEC;
+	border-right: 1px solid #ECECEC;
+	border-top: 1px dashed #DCDCDC;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05);
+	font-size: 1em;
+	margin: 6px auto;
+	/* max-width: 420px; */
+	width: 380px;
+}
+
+div.card#header /* div.card:first-child */ { border-top: 1px solid #ECECEC; }
+div.card#footer /* div.card:last-child */ { border-bottom: 1px solid #ECECEC; }
+
+div.card#header h1 {
+	color: #444;
+	font-size: 2.2em;
+	margin: 0;
+	padding: 16px 8px;
+	text-align: right;
+}
+
+div.card#header h1 small {
+	font-size: 0.6em;
+	vertical-align: 0.9em;
+}
+
+div.card#date h3 {
+	font-size: 1.4em;
+	font-weight: 300;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+}
+
+div.itemview {
+	font-size: 1em;
+}
+
+div.itemview#good {
+	background: #FDFFFC;
+}
+
+div.itemview#bad {
+	background: #FFFCFC;
+}
+
+div.itemview h2{
+	border-right: 1px solid #ECECEC;
+	display: inline-block;
+	line-height: 4em;
+	text-align: center;
+	vertical-align: middle;
+	width: 60px;
+}
+
+div.itemview ul.items{
+	display: inline-block;
+	font-size: 1em;
+	margin: 0;
+	padding: 0 16px;
+	vertical-align: middle;
+}
+
+div.itemview ul.items li {
+	font-size: 1em;
+	list-style: none;
+	margin: 16px 0;
+}
+
+div.itemview ul.items li h3 {
+	color: #555;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+div.itemview ul.items li blockquote {
+	color: #686868;
+	font-size: 1.1em;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+div.card#footer p {
+	color: #AAA;
+	padding: 10px 8px;
+	text-align: right;
+}
+
+a {
+	color: #AAF;
+	text-decoration: none;
+}
