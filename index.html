@@ -1,50 +1,90 @@
+<!--
+
+	音游狗老黄历 beta
+
+	Copyright (c) 2014 by Naoki Rinmous, published under MIT license.
+
+	程序文本中出现的品牌与商标之版权归其持有者所属,
+	若程序中的文本对您产生不适或侵犯了您的权益等, 请及时与我联络
+
+	~ View-source is a feature ~
+
+	Contact me: i@futa.moe / http://weibo.com/uncookie
+
+-->
+
+<!DOCTYPE html>
+
 <html>
 	<head>
-		<title>音游狗老黄历 beta</title>
+		<title>音游狗老黄历 v2</title>
+
+		<meta name="author" content="椎名奈緒" />
+		<meta name="description" content="使用JavaScript的一个测运势小程序" />
+
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
 		<link href="style.css" rel="stylesheet" />
+		<link href="index.css" rel="stylesheet" />
 	</head>
 	<body>
 		<!-- Card: Header -->
 		<div class="card" id="header">
-			<h1>音游狗老黄历<small>beta</small></h1>
+			<h1>音游狗老黄历<small>v2</small></h1>
 		</div>
-		
+
 		<!-- Card: Date -->
-		<div class="card" id="date">
+		<div class="card" id="header2">
 			<h3 id="date-display">程式载入中...</h3>
+			<span id="bookmark-me">可直接加入书签, 欢迎微博<a href="http://weibo.com/uncookie">@理子饼干</a>或<a href="mailto:i@futa.moe">邮件</a>投稿 &gt;&nbsp;&lt;</span>
 		</div>
-		
+
 		<!-- Card: Good -->
 		<div class="card itemview" id="good">
 			<h2>宜</h2>
 			<ul class="items" id="good-items">
-				<li>
-					<h3>拒绝围巾</h3>
-					<blockquote>你今天乘坐交通工具不会有问题</blockquote>
-				</li>
 			</ul>
 		</div>
-		
+
 		<!-- Card: Bad -->
 		<div class="card itemview" id="bad">
 			<h2>不宜</h2>
 			<ul class="items" id="bad-items">
 			</ul>
 		</div>
-		
+
 		<div class="card" id="forkme">
 			<a href="https://github.com/amphineko/musicgamer-almanac" target="_blank">Fork me on GitHub</a>
 		</div>
-		
+
 		<!-- Card: Footer -->
 		<div class="card" id="footer">
-			<p>By Naoki Rinmous (<a href="http://weibo.com/uncookie">@理子饼干</a>), 欢迎微博投稿, rev.8</p>
+			<p>
+				<a href="http://acgch.me/">Naoki Rinmous</a> (<a href="http://weibo.com/uncookie">@理子饼干</a>)<br />
+				最后于2014年09月11日更新数据, 本页黄历根据日期生成<br />
+			</p>
+			<a href="#" id="hidden-button" onclick="hiddenshow();">使用前必读与感谢</a>
+			<p id="hidden-footer">
+				请注意, 该程序仅为本人练习作品, 而不为其产生的结果负责<br />
+				使用了Acfun个人中心黄历的图片资源<br />
+				<br />
+				感谢以下的各位提供的灵感和素材<br />
+				<br />
+				狐隙稲荷神社群成员<br />
+				@完先生, @梅桐彩葉, @PlanB_节操花_FFlowerS
+			</p>
 		</div>
-		
-		<!-- Controller & Analytics Scripts -->
-		<script src="script.js"></script>
+
+		<!-- Scripts -->
+		<script src="init.js"></script>
 		<script type="text/javascript" src="http://js.tongji.linezing.com/3501460/tongji.js"></script>
+		<script>
+			function hiddenshow() {
+				document.getElementById('hidden-footer').style.display = 'block';
+				document.getElementById('hidden-button').style.display = 'none';
+			}
+		</script>
 		<noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/3501460/tongji.gif"/></a></noscript>
 	</body>
 </html>

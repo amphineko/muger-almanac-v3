@@ -6,19 +6,16 @@ body {
 	font-family: "微软雅黑", "Trebuchet MS", Roboto, arial, sans-serif;
 	font-size: 12px;
 	height: auto;
+	padding: 0 8px 16px 8px;
 }
 
 div.card {
 	background: white;
-	border-bottom: 1px dashed #DCDCDC;
-	border-left: 1px solid #ECECEC;
-	border-right: 1px solid #ECECEC;
-	border-top: 1px dashed #DCDCDC;
+	border: 1px solid #ECECEC;
 	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05);
 	font-size: 1em;
 	margin: 6px auto;
-	/* max-width: 420px; */
-	width: 380px;
+	max-width: 420px;
 }
 
 div.card#header /* div.card:first-child */ { border-top: 1px solid #ECECEC; }
@@ -37,24 +34,13 @@ div.card#header h1 small {
 	vertical-align: 0.9em;
 }
 
-div.card#date h3 {
+div.card#header2 h3 {
+	display: block;
 	font-size: 1.4em;
 	font-weight: 300;
 	margin: 0;
-	padding: 10px;
+	padding: 12px;
 	text-align: center;
-}
-
-div.itemview {
-	font-size: 1em;
-}
-
-div.itemview#good {
-	background: #FDFFFC;
-}
-
-div.itemview#bad {
-	background: #FFFCFC;
 }
 
 div.itemview h2{
@@ -78,6 +64,13 @@ div.itemview ul.items li {
 	font-size: 1em;
 	list-style: none;
 	margin: 16px 0;
+	width: 270px;
+}
+
+div.itemview ul.items li img {
+	float: left;
+	height: 36px;
+	margin-right: 8px;
 }
 
 div.itemview ul.items li h3 {
@@ -96,7 +89,9 @@ div.itemview ul.items li blockquote {
 
 div.card#footer p {
 	color: #AAA;
-	padding: 10px 8px;
+	font-size: 1em;
+	line-height: 1.4em;
+	padding: 8px;
 	text-align: right;
 }
 

@@ -1,0 +1,33 @@
+span#bookmark-me {
+    background: #EEE;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+}
+
+div.itemview#good {
+    background: #F6FFF2;
+    border-bottom: 1px dashed #DCDCDC;
+    margin: 18px auto 0 auto;
+}
+
+div.itemview#bad {
+    background: #FFF9F9;
+    border-top: none;
+    margin: 0 auto 18px auto;
+}
+
+#hidden-footer {
+	background: #EFEFEF;
+	display: none;
+}
+
+#hidden-button {
+	background: #EFEFEF;
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+}
